@@ -1,8 +1,12 @@
-\contentsline {section}{\numberline {1}Introduction}{2}% 
-\contentsline {section}{\numberline {2}Literature Review}{2}% 
-\contentsline {section}{\numberline {3}Objective}{2}% 
-\contentsline {section}{\numberline {4}Methodology}{2}% 
-\contentsline {subsection}{\numberline {4.1}Study of literature}{2}% 
-\contentsline {subsection}{\numberline {4.2}Development of Simulation Model}{2}% 
-\contentsline {subsection}{\numberline {4.3}Terms}{2}% 
-\contentsline {section}{\numberline {5}Operating Theory}{2}% 
+\contentsline {section}{\numberline {1}Motivation}{2}% 
+\contentsline {section}{\numberline {2}Introduction}{3}% 
+\contentsline {section}{\numberline {3}Literature Review}{3}% 
+\contentsline {section}{\numberline {4}Objective}{3}% 
+\contentsline {section}{\numberline {5}Methodology}{3}% 
+\contentsline {subsubsection}{\numberline {5.0.1}3D design of receiver and transmitter coil in Ansys Maxwell}{4}% 
+\contentsline {subsubsection}{\numberline {5.0.2}design of electrical circuit using Ansys simprop}{4}% 
+\contentsline {subsection}{\numberline {5.1}Analysis using Matlab Simulink}{4}% 
+\contentsline {subsection}{\numberline {5.2}Terms}{4}% 
+\contentsline {section}{\numberline {6}Operating Theory}{4}% 
+\contentsline {subsection}{\numberline {6.1}Static}{4}% 
+\contentsline {subsection}{\numberline {6.2}Dynamic}{5}% 

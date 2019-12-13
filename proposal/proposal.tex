@@ -10,15 +10,107 @@
 \input{titlepage.tex}
 \tableofcontents
 \newpage
+
+\renewcommand{\baselinestretch}{1.5}
+
+\section{Motivation}
+
+In recent decades, there have been significant developments and breakthroughs intechnology. 
+The use of a variety of autonomous electronics devices; such as mobile phones, laptops, tablets and home appliances has significantly increased due to consumer
+demands. Such electronics contain on-board energy storage modules in the form of
+lithium based batteries. These batteries have normally been charged by conventional
+battery chargers through physical contacts. This form of connection increases the risk of
+short circuits; either by water or foreign objects crossing the contacts, or due to damaged
+connectors. In addition, different electronic devices have different power ratings as well
+as a variety of standardized chargers. Standardised
+chargers create inconvenience to the users when they travel to another country. Moreover, when such electronic devices are upgraded or replaced, the chargers also need replacing
+even though they may still be in good working order. These unused devices end up in landfill because of improper recycling. This is known as electronic waste (E-Waste). 
+Worldwide 20 to 50 million tonnes of E-Waste is annually generated.
+
+In order to reduce the usage of high priced fossil
+fuels, electrified transportation requires the set-up of a wide variety of charging networks to create user-friendly environments and to tackle green-house and fuel price hikes.
+To compete with gasoline-powered cars, EVs are required to have a long travelling range with an efficient refuel
+capacity. These features can only be achieved by installing a larger battery bank with continual charging facilities. However, a larger battery bank increases the overall price
+of EVs and requires additional charging time. Such limitations are the biggest hurdles in making EVs a reliable transportation alternative. 
+
+
+In order to tackle these issues, Wireless Charging Systems(WCS) are one of the up and coming technologies which have the potential to provide contactless charging facilities in low, medium and high power consumer electronic products. 
+and dynamic modes. WCS technology can offer \textbf{safe, secure ,reliable} and \textbf{user friendly} charging techniques that are environmentally sound. WCS can provide a common charging platform for most electronic devices so different electronic products do not require separate standardised chargers to charge their batteries. Moreover, it can help to reduce the battery storage requirements by providing a continuous dynamic charging facility wirelessly. This technology can reduce toxic and non-biodegradable hazardous E-waste by establishing a common charging platform for all electronic products. %cite
+
 \section{Introduction}
+In the 21st century, wireless power transmission
+systems (WPTS) are considered to be advanced technologies for numerous applications
+such as mobile devices, home appliances, and medical implants in the areas of low and
+medium voltage electronics devices, by the utilisation of two fundamental important
+mechanisms: inductive coupling and strong electromagnetic resonant coupling %[15].
+
+Firstly, the inductive coupling method with resonant case was identified and used in the
+experiment by Nikola Tesla in 1914.
+
+The problem or limitation associated with WCS is that they can only be
+utilised when the vehicle is parked or in stationary modes such as in car parks, garages or
+at traffic signals [11]. In addition, stationary WCS have some challenges such as
+electromagnetic compatibility (EMC) issues, limited power transfer, bulky structures,
+shorter range and higher efficiency [25-27].
+
+In order to improve both areas (range and sufficient volume of battery storage), a dynamic
+mode of operation of the WCS for EVs has been researched [28, 29]. This method allows
+battery storage devices to be charged while the vehicle is in motion. The vehicle requires
+less volume of expensive battery storage which increases the range of the transportation
+[12]. However, before a dynamic WCS becomes more widely accepted, it has to
+overcome two main hurdles: a large air gap and coil misalignment. The power transfer
+efficiency depends on the coil alignment and the air gap distance between the source and
+receiver [25, 30]. The average air gap distance varies from 150 mm to 300 mm for small
+passenger vehicles while it may increase for larger vehicles. Aligning the optimal driving
+position on the transmitter coil can be performed easily because the car drives
+automatically while in the dynamic mode. In addition, different compensation methods
+(such as series and parallel combinations) are employed on both the transmitting and
+receiving sides to reduce parasitic losses and improve system efficiency [31, 32].
+\cite{knupfer2017electrifying}
 \section{Literature Review}
+
 \section{Objective}
 \section{Methodology}
-\subsection{Study of literature}
-\subsection{Development of Simulation Model}
+\begin{enumerate}
+	\item The different resonant circuit will be modeled . Simulation results will be carried out showing the effect of parameters such as inductor, capacitor, load and coupling coefficient on efficiency. 
+	\item 3D modeling of transmitting and receiving coil using ANSYS Maxwell. 
+	\item Design of system circuit in ANSYS Simplorer. 
+	\item Design of complete system of a magnetic resonance WPT in Maxwell. 
+	\item Comparing Magnetic Induction Power Transfer with Magnetic Resonance Method. 
+	\item Design of 
+		\begin{enumerate}
+			\item three-level cascaded PI controller  to eliminate the variation of voltage because of varied spacing existing between both coils.
+			\item fuzzy logic and neuro-fuzzy controller
+			\item Three-level cascaded MPPT control. 
+		\end{enumerate}
+	\item Comparison of above designs. 
+\end{enumerate}
+
+\subsubsection{3D design of receiver and transmitter coil in Ansys Maxwell}
+\subsubsection{design of electrical circuit using Ansys simprop}
+\subsection{Analysis using Matlab Simulink}
+
 \subsection{Terms}
-Rabin \cite{rabin22}
 \section{Operating Theory}
+\subsection{Static}
+Figure 2.19 shows the basic arrangement of static WEVCS. The primary coil is installed
+underneath in the road or ground with additional power converters and circuitry. The
+receiver coil, or secondary coil, is normally installed underneath of the EVs front, back
+or center. The receiving energy is converted from AC to DC using the power converter
+and is transferred to the battery bank. In order to avoid any safety issues, power control
+and battery management systems (BMS) are fitted with a wireless communication
+network to receive any feedback from the primary side. The charging time depends on
+the source power level, charging pad sizes, and air gap distance between the two
+windings. The average distance between lightweight duty vehicles is approximately 150
+mm - 300 mm. Static WEVCS can be installed in parking areas, car parks, homes,
+commercial buildings, shopping centres,
+  %block diagram of static
+  
+  \subsection{Dynamic}
+  As
+shown in Figure 2.20, the primary transmitter coils are embedded into the road concrete with high voltage, high frequency AC source and compensation circuits to the microgrid. Like static WEVCS, the secondary receiver is mounted underneath of the vehicles. When the EVs pass over the transmitter, it receives a magnetic field through a receiver coil and convert it to DC to charge the battery bank by utilising the power converter and BMS [130]. Frequent charging facilities of EVs reduces the overall battery
+requirement by approximately 20\% in comparison to the current EVs [47]. For dynamic-WEVCS, transmitter pads and power supply segments need to be installed on specific
+locations and pre-defined routes [131]. The operating frequency of the dynamic charging is up to few kilohertz [132-134]. The power supply segments are mostly divided into centralised and individual power frequency schemes as shown in Figure 2.20 (a) and (b). In the centralised power supply scheme, a large coil (around 5 to 10 metres) is installed on the road surface, where multiple small charging pads are utilised. In comparison with the segmented scheme, the centralised scheme has higher losses, lower efficiency including high installation, and higher maintenance costs [81].
 \bibliographystyle{plain}
 \bibliography{main}
 \end{document}
