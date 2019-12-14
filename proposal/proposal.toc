@@ -5,5 +5,5 @@
 \contentsline {section}{\numberline {5}Literature}{5}% 
 \contentsline {section}{\numberline {6}Methodology}{6}% 
 \contentsline {subsection}{\numberline {6.1}For static mode}{6}% 
-\contentsline {subsection}{\numberline {6.2}For dynamic mode}{6}% 
-\contentsline {section}{\numberline {7}Operating Theory}{7}% 
+\contentsline {subsection}{\numberline {6.2}For dynamic mode}{7}% 
+\contentsline {section}{\numberline {7}Operating Theory}{9}% 
