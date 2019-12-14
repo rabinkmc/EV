@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.21)  13 DEC 2019 22:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.21)  14 DEC 2019 17:05
 entering extended mode
 **./proposal.tex
 (proposal.tex
@@ -228,18 +228,18 @@ ent Sys-tems (BMS), Wire-
 <image1.jpg, id=19, 752.8125pt x 414.54875pt>
 File: image1.jpg Graphic file (type jpg)
 <use image1.jpg>
-Package pdftex.def Info: image1.jpg  used on input line 51.
+Package pdftex.def Info: image1.jpg  used on input line 50.
 (pdftex.def)             Requested size: 376.40532pt x 207.27386pt.
  [4 <./image1.jpg>] [5] [6]
 <static.png, id=31, 422.07687pt x 266.9975pt>
 File: static.png Graphic file (type png)
 <use static.png>
-Package pdftex.def Info: static.png  used on input line 118.
+Package pdftex.def Info: static.png  used on input line 115.
 (pdftex.def)             Requested size: 316.55687pt x 200.24762pt.
 <circuit.png, id=33, 321.2pt x 173.14688pt>
 File: circuit.png Graphic file (type png)
 <use circuit.png>
-Package pdftex.def Info: circuit.png  used on input line 126.
+Package pdftex.def Info: circuit.png  used on input line 123.
 (pdftex.def)             Requested size: 321.19922pt x 173.14645pt.
 
 
@@ -253,13 +253,13 @@ Here is how much of TeX's memory you used:
  6456 multiletter control sequences out of 15000+200000
  9445 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,7n,30p,1174b,223s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,7n,30p,1175b,223s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on proposal.pdf (9 pages, 427410 bytes).
+Output written on proposal.pdf (9 pages, 427443 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
