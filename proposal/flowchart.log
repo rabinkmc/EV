@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.21)  14 DEC 2019 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.21)  14 DEC 2019 20:02
 entering extended mode
 **./flowchart.tex
 (flowchart.tex
@@ -524,15 +524,15 @@ ABD: EveryShipout initializing macros [1
 {C:/Users/Rabin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (flowchart.
 aux) ) 
 Here is how much of TeX's memory you used:
- 13340 strings out of 492453
- 277603 string characters out of 3129819
- 323092 words of memory out of 3000000
- 17471 multiletter control sequences out of 15000+200000
+ 13339 strings out of 492453
+ 277259 string characters out of 3129819
+ 324092 words of memory out of 3000000
+ 17470 multiletter control sequences out of 15000+200000
  3938 words of font info for 15 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,6n,58p,452b,670s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,6n,58p,452b,672s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on flowchart.pdf (1 page, 14010 bytes).
+Output written on flowchart.pdf (1 page, 16700 bytes).
 PDF statistics:
  13 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
