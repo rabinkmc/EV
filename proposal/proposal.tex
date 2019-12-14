@@ -91,7 +91,7 @@ the two coils (Yeo, 2017). \cite{a2019}
 
 
 \section{Methodology}
-\input{begin_method.tex}
+Research papers on current state of Ev, the state of wireless charging in both static and dynamic mode will be studied. Major experiments done in the field of WEV's will be studied. Once the limitations and obstacles are known, problem statement will be formulated and the team will work on finding solution. For this, various design models will be made, simulated and tested using softwares like ANSYS Electronic-Suite and Matlab Simulink. Based on the result of our analysis, further recommendations and conclusions will be made. 
 \subsection{For static mode}
 \begin{enumerate}
 	\item The different resonant circuit will be modeled . Simulation results will be carried out showing the effect of parameters such as inductor, capacitor, load and coupling coefficient on efficiency. 
@@ -109,32 +109,7 @@ the two coils (Yeo, 2017). \cite{a2019}
 		The design of dynamic mode controllers will be done using Matlab Simulink. 
 \end{enumerate}
 Workflow of the project is shown in the form of flowchart below. 
-\begin{center}
-\begin{tikzpicture}[node distance=2cm]
-	\node (br) [process] {literature review};
-	\node (p1) [process, below of=br] {Formulation of problem};
-	\node (p2) [process, below of=p1] {Modeling and simulation}; 
-	\node (p3) [process, left of=p2, yshift=-2cm, xshift=-3cm] {Modeling of resonant ckt, 3D modeling of RX and TX coil};
-	\node (p4) [process, right of=p2, yshift=-2cm, xshift=+3cm] {Modeling of PI, fuzzy, neuro-fuzzy,MPPT controller};
-	\node(p5) [process, below of=p3, yshift=-0.5cm] {simulation};
-	\node(p6) [process, below of=p4, yshift=-0.5cm] {simulation};
-	\node(a1) [decision, below of=p5, yshift=-1.75cm] {Analysis and comparison amongst models};
-	\node(a2) [decision, below of=p6, yshift=-1.75cm] {Analysis and comparison amongst models};
-	\node(r) [process, below of=a1, yshift=-2cm, xshift=+5cm] {Recommendation and conclusion};
-	\draw [arrow] (br) -- (p1); 
-	\draw [arrow] (p1) -- (p2);
-	\draw [arrow] (p3) -- (p5);
-	\draw [arrow] (p4) -- (p6);
-	\draw [arrow] (p5) -- (a1); 
-	\draw [arrow] (p6) -- (a2); 
-	\draw [arrow] (p2) -| node[anchor=south]{static} (p3); 
-	\draw [arrow] (p2) -| node[anchor=south]{dynamic} (p4); 
-	\draw [arrow] (a1) -- ++(4cm,0) |-(p3); 
-	\draw [arrow] (a2) -- ++(-4cm,0) |- (p4);
-	\draw [arrow] (a1) |- (r);
-	\draw [arrow] (a2) |- (r);
-\end{tikzpicture}
-\end{center}
+\input{flowchart.tex}
 \newpage
 
 \section{Operating Theory}
