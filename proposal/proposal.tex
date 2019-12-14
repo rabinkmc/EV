@@ -6,13 +6,26 @@
 \usepackage{geometry} \geometry{a4paper} 
 \usepackage{graphicx} 
 % \usepackage[parfill]{parskip} 
-
+\setlength{\parskip}{1em}
 \begin{document}
 \input{titlepage.tex}
 \tableofcontents
 \newpage
 
 \renewcommand{\baselinestretch}{1.5}
+\section{Terms}
+\textit{Wireless Charging Systems (WCS), 
+	Wireless Power Transmission Systems (WPTS), 
+	Resonant Inductive Coupling (RIC),
+	Electric Vehicles (EV), 
+	Maximum Power Point Tracking(MPPT),
+	Wireless power transfer (WPT),
+	Proportional Integral(PI),
+	Proportional Integral Derivative(PID),
+	Battery Management Systems (BMS),
+Wireless Electric Vehicle Charging System (WEVCS)}
+
+
 \section{Objective}
 \textit{To improve power transfer efficiency of wireless charging system for EVs in static and dynamic mode}
 
@@ -30,8 +43,8 @@ such as mobile devices, home appliances, and medical implants in the areas of lo
 Firstly, the inductive coupling method with resonant case was identified and used in the experiment by Nikola Tesla in 1914.  This method is also known as Resonant Inductive Coupling (RIC). His idea was to transfer power over a long distance globally. Radiative transfer is suitable for transferring data and other information over the air, over a long distance, by using antennas. However, when it comes to power transfer, it is very difficult to use this method because most of the energy is lost in the air because of the omni-directional transmission. Otherwise, it requires a line of sight and an advanced tracking system at the receiver side. Inductive coupling is an immersing method to transfer power wirelessly in the power ranges between mill watts and some kilowatts.
 However, when it comes to efficiency, it decreases significantly with increasing distance between the primary and secondary circuit.The problem or limitation associated with WCS is that they can only be utilised when the vehicle is parked or in stationary modes such as in car parks, garages or at traffic signals . In addition, stationary WCS have some challenges such as limited power transfer, bulky structures,shorter range and higher efficiency. 
 
-In order to improve both areas (range and sufficient volume of battery storage), a dynamic mode of operation of the WCS for EVs has been researched. Inductive charging of electric vehicle at high power levels while in motion is referred to as dynamic charging. If a car was able to be charged while it was being driven, then this would solve the problem of limited range and enable vehicles to travel for potentially unlimited distances. The idea is that a coil on the bottom of a car could receive electricity from coils that are connected to an electric current that is emnedded in the road. The vehicle would also requireless volume of expensive battery storage which increases the range of the transportation. A dynamic WCS can be significantly improved using , different controllers (PI controller, fuzzy, neuro-fuzzy MPPT) methods.\cite{knupfer2017electrifying} 
-\newpage
+In order to improve both areas (range and sufficient volume of battery storage), a dynamic mode of operation of the WCS for EVs has been researched. Inductive charging of electric vehicle at high power levels while in motion is referred to as dynamic charging. If a car was able to be charged while it was being driven, then this would solve the problem of limited range and enable vehicles to travel for potentially unlimited distances. The idea is that a coil on the bottom of a car could receive electricity from coils that are connected to an electric current that is emnedded in the road. However, before a dynamic WCS becomes more widely accepted, it has to overcome two main hurdles: a large air gap and coil misalignment. As the distance between the two coils is getting larger, the voltage at the receiver end of the transmission reduces. To compensate for the variation of the voltage, different control methods( a three-level PI controller, fuzzy and neuro fuzzy conntroller, MPPT control) are employed to improve system efficiency. 
+
 A simple block diagram implementation of wireless charging system is shown below in figure \ref{fig:scheme}:
 \begin{figure}[h!]
 	\centering
@@ -39,6 +52,45 @@ A simple block diagram implementation of wireless charging system is shown below
 	\caption{Schematic of Wireless Charging System}
 	\label{fig:scheme}
 \end{figure}
+\newpage
+\section{Literature}
+Wireless electric vehicle charging techniques have been popular for some time now due to their
+safety, convenience and efficiency. There are several ways to increase the WPT efficiency of a system.
+First is by the proposed Series-Series (SS) resonant compensation topology alongside the design of
+radio frequency feedback (Tan, 2017). This proposed model was experimented and tested with a
+500W laboratory prototype and it was found that the efficiency was above 90\%, an air gap was 15
+cm, distance was 10cm and over an operating input voltage of 120VAC (Tan, 2017). The second
+method used to enhance WPT efficiency is by varying the operating frequency ranging from 81.38-90 kHz, 
+the duty ratio and input voltage respectively (Ravikiran, 2017). The other technique employed
+was by finding a reference voltage in the secondary side using the simultaneous estimation of the
+secondary side's mutual inductance and a voltage at the primary side (Hata, 2016). In addition, the
+compensation topologies play a key role in the power transfer efficiency, therefore, this paper gives a
+detailed comparison between the SS and PS compensation topologies (Ravikiran, 2017). Simulation
+results show that the PS topology is good for power applications of medium range. This paper uses
+secondary side LCC impedance matching circuit under a rectifier load to enhance the maximum
+efficiency transferred (Liao, 2017).
+
+To keep up with the pace of battery capacities, it is essential to increase the rate at which an
+electric vehicle battery is wirelessly charged. One of the ways of increasing battery performance is
+by designing the coupling factor of the coil system appropriately and ensuring that the rate of
+displacement is large (Klaus, 2017). Another way to increase the power transfer system of an electric
+vehicle is to use two extra coils in between the transmitter and the receiver coils with experimental
+verification with a 6.6KW circuit (Tran, 2018). This results in an efficiency of 97.08\% for 3.4KW.
+For different challenges associated with WPT to be addressed, this paper proposed employing an
+20 improved floor surface for shielding the transmitting coil area, high-frequency switches with large
+bandgap switches and polygon iron core (Mahmud, 2017). These components help to improve the
+system's efficiency.
+
+Subsequently, a wireless power charging system requires a constant current flow and output
+voltage alongside a maximum efficiency. This leads to the design of a control based maximum
+efficiency tracking system that controls the transmitter current based on the information the receiver
+receives via Bluetooth (Yeo, 2017). This gives a constant output voltage and constant current flow
+with increased efficiency in the WPT system. A fixed voltage source and fixed current load are
+modeled, analyzed and verified experimentally to increase the wireless power charging system's 
+efficiency (Zhang, 2017). The voltage transmitted in a wireless power transfer depends on the
+distance between two coils. This paper implements a proportional integral controller at the receiver
+side of the wireless power transfer to eliminate the variation of voltage for a varied distance between
+the two coils (Yeo, 2017). \cite{a2019}
 
 \section{Methodology}
 \subsection{For static mode}
@@ -57,27 +109,9 @@ A simple block diagram implementation of wireless charging system is shown below
 	\item Design of three-level cascaded MPPT controller. 
 		The design of dynamic mode controllers will be done using Matlab Simulink. 
 \end{enumerate}
-\section{Literature}
-\begin{description}
-	\item[Maximum power point tracking (MPPT)] or sometimes just power point tracking (PPT) is a technique  of finding point in which power transfer at highest efficiency. MPPT is used  to maximize power extraction under all conditions. Although it primarily applies to solar power, the principle applies generally to sources with variable power.MPPT devices are typically integrated into an electric power converter system that provides voltage or current conversion, filtering, and regulation for driving various loads, including power grids, batteries, or motors.
-	\item[PID controller] A proportional-integral-derivative controller (PID controller or three-term controller) is a control loop mechanism employing feedback that is widely used in industrial control systems and a variety of other applications requiring continuously modulated control. A PID controller continuously calculates an error value e(t). If we put Proportional and Integral action together, we get the humble PI controller.
-	\item[Fuzzy logic] Fuzzy logic is a form of many-valued logic in which the truth values of variables may be any real number between 0 and 1 both inclusive. It is employed to handle the concept of partial truth, where the truth value may range between completely true and completely false. By contrast, in Boolean logic, the truth values of variables may only be the integer values 0 or 1. A fuzzy control system is a control system based on fuzzy logic.
-	\item[Neuro-Fuzzy logic] Neuro-fuzzy refers to combinations of artificial neural networks and fuzzy logic.Neuro-fuzzy hybridization results in a hybrid intelligent system that synergizes these two techniques by combining the human-like reasoning style of fuzzy systems with the learning and connectionist structure of neural networks. A neuro-fuzzy control system is a control system based on neuro-fuzzy logic.
-\end{description}
 
 \newpage
 
-\section{Terms}
-\textit{Wireless Charging Systems (WCS), 
-	Wireless Power Transmission Systems (WPTS), 
-	Resonant Inductive Coupling (RIC),
-	Electric Vehicles (EV), 
-	Maximum Power Point Tracking(MPPT),
-	Wireless power transfer (WPT),
-	Proportional Integral(PI),
-	Proportional Integral Derivative(PID),
-	Battery Management Systems (BMS),
-Wireless Electric Vehicle Charging System (WEVCS)}
 \section{Operating Theory}
 \begin{figure}[h]
 	\centering
@@ -86,8 +120,15 @@ Wireless Electric Vehicle Charging System (WEVCS)}
 	\label{fig:WEV}
 \end{figure}
 Figure \ref{fig:WEV} shows the basic arrangement of WEVCS. The primary coil is installed underneath in the road or ground with additional power converters and circuitry. The receiver coil, or secondary coil, is normally installed underneath of the EVs front, back
-or center. The receiving energy is converted from AC to DC using the power converter and is transferred to the battery bank. In order to avoid any safety issues, power control and battery management systems (BMS) are fitted with a wireless communication network to receive any feedback from the primary side. The charging time depends on the source power level, charging pad sizes, and air gap distance between the two windings. The average distance between lightweight duty vehicles is approximately 150 mm - 300 mm. Static WEVCS can be installed in parking areas, car parks, homes, commercial buildings, shopping centres,
+or center. The receiving energy is converted from AC to DC using the power converter and is transferred to the battery bank. In order to avoid any safety issues, power control and battery management systems (BMS) are fitted with a wireless communication network to receive any feedback from the primary side. The charging time depends on the source power level, charging pad sizes, and air gap distance between the two windings. The average distance between lightweight duty vehicles is approximately 150 mm - 300 mm. Static WEVCS can be installed in parking areas, car parks, homes, commercial buildings, shopping centres. \cite{pl2018}
+\begin{figure}[h]
+	\centering
+	\includegraphics{circuit.png}
+	\caption{circuit diagram of electric wireless system}
+	\label{fig:ckt}
+\end{figure}
   %block diagram of static
+ \newpage 
   
 \bibliographystyle{plain}
 \bibliography{main}
